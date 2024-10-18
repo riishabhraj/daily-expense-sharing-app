@@ -1,10 +1,10 @@
-## Daily Expenses Sharing Application
+# Daily Expenses Sharing Application
 This is the backend for a Daily Expenses Sharing Application, built with Node.js, Express, and MongoDB. 
 The application allows users to add expenses and split them among participants based on three different 
 methods: Equal, Exact, and Percentage. It also supports generating a balance sheet of expenses and downloading 
 it as a CSV file.
 
-# Features
+## Features
 - **User Management**:  
   Create users with email, name, and mobile number.
 
@@ -20,7 +20,7 @@ it as a CSV file.
 - **Error Handling**:  
   Input validation for correct data processing.
 
-# Technologies Used
+## Technologies Used
 - **Backend**:  
   Node.js, Express
 
@@ -37,14 +37,14 @@ it as a CSV file.
   nodemon
 
 
-# Getting Started
+## Getting Started
 • Prerequisites
 Ensure you have the following installed on your machine:
 
 Node.js (v12 or higher)
 MongoDB (or use a cloud database like MongoDB Atlas)
 
-# Installation
+## Installation
 Clone the Repository:
 
 ``` bash
@@ -52,13 +52,13 @@ git clone https://github.com/riishabhraj/daily-expense-sharing-app.git
 cd daily-expenses-sharing-app
 ```
 
-# Install Dependencies:
+## Install Dependencies:
 
 ``` bash
 npm install
 ```
 
-# Set Up Environment Variables:
+## Set Up Environment Variables:
 
 Create a .env file in the root directory and configure the following variables:
 
@@ -67,7 +67,7 @@ PORT=3000
 DB_URI=your_mongodb_connection_string
 ```
 
-# Run the Application:
+## Run the Application:
 
 You can run the application using nodemon for live-reloading during development:
 
@@ -77,7 +77,7 @@ npm start
 
 The server will be available at http://localhost:3000.
 
-# Project Structure
+## Project Structure
 Here’s the overall structure of the project:
 
 ``` bash
@@ -98,8 +98,8 @@ daily-expenses-sharing-app/
 └── .gitignore          # Ignored files (e.g., node_modules)
 ```
 
-# API Endpoints and Logic Explanation
-# User Management
+## API Endpoints and Logic Explanation
+## User Management
 1. Create a User
 Endpoint: POST /api/users/create
 Description: Creates a new user with name, email, and mobile number.
@@ -125,7 +125,7 @@ Response:
 }
 ```
 
-# Logic:
+## Logic:
 The request body is validated to ensure the presence of required fields (name, email, mobile).
 A new user is created using Mongoose's save() method and stored in the MongoDB collection.
 2. Get User Details
@@ -280,10 +280,10 @@ Use the following API routes to test your backend in Postman:
 - **Get Overall Expenses**:  
   - `GET /api/expenses/overall`
 
-# Download Balance Sheet:
+## Download Balance Sheet:
 • GET /api/expenses/balance-sheet
 
-# Future Improvements
+## Future Improvements
 • Authentication: Implement user authentication and authorization.
 • Unit Tests: Add unit and integration tests for better coverage.
 • Performance: Optimize database queries and application performance for large datasets.
