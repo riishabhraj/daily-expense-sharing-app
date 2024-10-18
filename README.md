@@ -5,20 +5,37 @@ methods: Equal, Exact, and Percentage. It also supports generating a balance she
 it as a CSV file.
 
 # Features
-• User Management: Create users with email, name, and mobile number.
-• Expense Management: Add expenses and split them using one of the three methods:
-• Equal Split: Split expenses equally among all participants.
-• Exact Split: Specify the exact amount each participant owes.
-• Percentage Split: Split expenses based on percentage ownership.
-• Balance Sheet: Retrieve individual and overall expenses, and download the balance sheet in CSV format.
-• Error Handling: Input validation for correct data processing.
+- **User Management**:  
+  Create users with email, name, and mobile number.
+
+- **Expense Management**:  
+  Add expenses and split them using one of the three methods:  
+  - **Equal Split**: Split expenses equally among all participants.  
+  - **Exact Split**: Specify the exact amount each participant owes.  
+  - **Percentage Split**: Split expenses based on percentage ownership.
+
+- **Balance Sheet**:  
+  Retrieve individual and overall expenses, and download the balance sheet in CSV format.
+
+- **Error Handling**:  
+  Input validation for correct data processing.
 
 # Technologies Used
-• Backend: Node.js, Express
-• Database: MongoDB (using Mongoose ODM)
-• Environment Variables: dotenv
-• CSV Generation: json2csv
-• Development Tools: nodemon
+- **Backend**:  
+  Node.js, Express
+
+- **Database**:  
+  MongoDB (using Mongoose ODM)
+
+- **Environment Variables**:  
+  dotenv
+
+- **CSV Generation**:  
+  json2csv
+
+- **Development Tools**:  
+  nodemon
+
 
 # Getting Started
 • Prerequisites
@@ -213,7 +230,6 @@ Description: Retrieves all recorded expenses in the system.
 Response:
 
 ``` json
-Copy code
 [
   {
     "_id": "uniqueExpenseId",
@@ -249,16 +265,20 @@ Percentage doesn’t total 100: "Percentages do not add up to 100%"
 Testing with Postman
 Use the following API routes to test your backend in Postman:
 
-• Create a User:
-  • POST /api/users/create
-• Get User Details:
-  • GET /api/users/:id
-• Add Expense (Equal Split):
-  • POST /api/expenses/add
-• Get Expenses for User:
-  • GET /api/expenses/user/:userId
-• Get Overall Expenses:
-  • GET /api/expenses/overall
+- **Create a User**:  
+  - `POST /api/users/create`
+
+- **Get User Details**:  
+  - `GET /api/users/:id`
+
+- **Add Expense (Equal Split)**:  
+  - `POST /api/expenses/add`
+
+- **Get Expenses for User**:  
+  - `GET /api/expenses/user/:userId`
+
+- **Get Overall Expenses**:  
+  - `GET /api/expenses/overall`
 
 # Download Balance Sheet:
 • GET /api/expenses/balance-sheet
