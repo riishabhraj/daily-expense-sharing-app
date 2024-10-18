@@ -284,6 +284,6 @@ Use the following API routes to test your backend in Postman:
 • GET /api/expenses/balance-sheet
 
 ## Future Improvements
-• Authentication: Implement user authentication and authorization.
-• Unit Tests: Add unit and integration tests for better coverage.
-• Performance: Optimize database queries and application performance for large datasets.
+- **Authentication**: Implement user authentication and authorization.
+- **Unit Tests**: Add unit and integration tests for better coverage.
+- **Performance**: Optimize database queries and application performance for large datasets.
